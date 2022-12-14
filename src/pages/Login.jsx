@@ -11,9 +11,9 @@ class Login extends React.Component {
   };
 
   checkUserName = ({ target }) => {
-    const minChars = 3;
+    const minChar = 3;
     const { value } = target;
-    const disabledBtn = value.length < minChars;
+    const disabledBtn = value.length < minChar;
     this.setState({ userName: value, disabledBtn });
   };
 
